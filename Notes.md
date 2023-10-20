@@ -38,3 +38,39 @@ SELECT id, (standard_amt_usd/total_amt_usd)*100 AS std_percent, total_amt_usd
 FROM orders
 LIMIT 10;
 ```
+
+## Operators
+- LIKE can be used to identify data which somewhat matches the given data. Used in place of =
+- IN to find multiple data set
+- BETWEEN
+- IS NULL
+- NOT
+- Concatenation operation(||) : SELECT Dname || Location As Department From dept; will return AcountsBanglore…
+- DISTINCT : Select distinct salary from emp; will display all distinct salaries. 
+
+Code looks like:
+```sql
+SELECT name,primary_poc,sales_rep_id
+FROM accounts
+WHERE name NOT IN ('Walmart','Target','Noedstrom');
+```
+
+- AND
+- OR
+- BETWEEN
+- <> : is for Not equal to
+
+
+Finished Lesson 1: Basic SQL
+Code looks like:
+```sql
+SELECT col1, col2
+FROM table1
+WHERE col3  > 5 AND col4 LIKE '%os%'
+ORDER BY col5
+LIMIT 10;
+```
+
+## Recap
+
+![image](https://github.com/HastyCyborg/SQL-Courses/assets/75210542/3d1ac9f4-ac94-4b8b-a41c-26e5b6623600)
